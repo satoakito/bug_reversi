@@ -30,7 +30,7 @@ class Reversi
       end
 
       print "command? (#{@current_stone == WHITE_STONE ? '白○' : '黒●'}) > "
-      command = gets.chars
+      command = gets.chomp
       break if QUIT_COMMANDS.include?(command)
 
       begin
